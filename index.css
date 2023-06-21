@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+    font-family: 'Inter', sans-serif; 
+    margin: 115px 0 0 50px 
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    width: 360px;
+    
+    
+}
+#random-pswd {
+    color: #4ADF86;
+}
+
+#para-el {
+    color: #D5D4D8;
+    font-size: 20px;    
+}
+
+#passwd-btn {
+    color: #FFFFFF;
+    background-color: #10B981;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 17px;
+    margin: 20px 0 20px 0px;    
+}
+
+#page-sep {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #2F3E53;
+    margin: 20px 50px 20px 0;
+    width: 450px;   
+}
+
+.password-box {
+    width: 211px;
+    height: 30px;
+    background-color: #273549;
+    border-radius: 6px;
+    text-align: center;
+    color: #55F991;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.copy-text {
+    color: red;
+    text-align: center;
+    font-size: .9rem;
+}
