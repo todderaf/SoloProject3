@@ -8,19 +8,19 @@ let passwordTwo = ""
 let copyP1 = document.getElementById('copy-p1')
 let copyP2 = document.getElementById('copy-p2')
 
-passwdBtn.addEventListener("click", function() {           
+passwdBtn.addEventListener("click", function() {
     passwordOne = ""  // reset the first password to null
     passwordTwo = ""  // reset the 2nd password to null
     copyP1.textContent = ""
     copyP2.textContent = ""
-        
+
     for (let i = 0; i < 15; i++) {
-        passwordOne += getCharacter()       
+        passwordOne += getCharacter()
         passwordTwo += getCharacter()
     }
-    password1Par.textContent = passwordOne + " 📋"  
+    password1Par.textContent = passwordOne + " 📋"
     password2Par.textContent = passwordTwo + " 📋"
-})   
+})
 
 password1Par.addEventListener("click", function() {
     if (password1Par.textContent.length > 0) {
@@ -32,7 +32,7 @@ password1Par.addEventListener("click", function() {
 
 password2Par.addEventListener("click", function() {
     if (password2Par.textContent.length > 0) {
-    let copyText = passwordOne;
+    let copyText = passwordTwo;
     navigator.clipboard.writeText(copyText);
     copyP2.textContent = "Password copied to clipboard."
     }
